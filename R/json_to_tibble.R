@@ -5,16 +5,14 @@
 #' @return Flattened tibble
 
 json_to_tibble <- function(f) {
-  library(magrittr)
-
   if (!file.exists(f)) {
     stop("File does not exist.")
   }
 
-  json_tibble <- jsonlite::fromJSON(f) %>%
-    tibble::as_tibble() %>%
-    jsonlite::flatten() %>%
-    tibble::as_tibble()
+  raw_json <- jsonlite::fromJSON(f)
+  raw_tibble <- tibble::as_tibble(raw_json)
+  flat_json <- jsonlite::flatten(raw_tibble)
+  flat_tibble <- tibble::as_tibble(flat_json)
 
   return(json_tibble)
 }
