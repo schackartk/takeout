@@ -1,8 +1,10 @@
 #' Convert (potentially) nested .json to tibble
 #'
-#' @param f File name (.json)
+#' Read in a .json file, unnest and flatten it, and return as a tibble.
 #'
-#' @return Flattened tibble
+#' @param f Name of a .json file.
+#'
+#' @return Tibble
 
 json_to_tibble <- function(f) {
   if (!file.exists(f)) {
@@ -12,7 +14,5 @@ json_to_tibble <- function(f) {
   raw_json <- jsonlite::fromJSON(f)
   raw_tibble <- tibble::as_tibble(raw_json)
   flat_json <- jsonlite::flatten(raw_tibble)
-  flat_tibble <- tibble::as_tibble(flat_json)
-
-  return(json_tibble)
+  tibble::as_tibble(flat_json)
 }
