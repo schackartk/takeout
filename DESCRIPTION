@@ -5,7 +5,9 @@ Version: 0.1.0
 Authors@R: person("Kenneth", "Schackart", email = "schackartk1@gmail.com",
                   role = c("aut", "cre"))
 Maintainer: The package maintainer <schackartk1@gmail.com>
-Description: Various functions for cleaning and tidying data obtained from Google Takeout.
+Description: A package providing functions for cleaning and tidying data
+    obtained from Google Takeout. Current applications are limited to Google
+    Maps related data (e.g. place ratings and reviews, location history).
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
