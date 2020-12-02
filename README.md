@@ -7,6 +7,8 @@
 
 <!-- badges: end -->
 
+![](man/figures/takeout_v1.svg)
+
 Functions for cleaning and tidying data obtained from Google Takeout.
 
 ## Installation
