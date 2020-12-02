@@ -1,3 +1,3 @@
-test_that("Errors out on bad file", {
-  expect_equal(2 * 2, 4)
+test_that("good error on bad file", {
+  expect_error(json_to_tibble("foo.json"),regexp = "'foo.json' does not*")
 })
