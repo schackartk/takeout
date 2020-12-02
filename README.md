@@ -7,7 +7,11 @@
 
 <!-- badges: end -->
 
-![](man/figures/takeout_v1.svg)
+<p align="center">
+
+<img src="man/figures/README_tile.svg" width="50%" />
+
+</p>
 
 Functions for cleaning and tidying data obtained from Google Takeout.
 
