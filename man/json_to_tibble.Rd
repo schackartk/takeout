@@ -7,7 +7,7 @@
 json_to_tibble(f)
 }
 \arguments{
-\item{f}{Name of a .json file.}
+\item{f}{Name of a .json file (string).}
 }
 \value{
 Tibble
