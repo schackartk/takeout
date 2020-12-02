@@ -5,10 +5,13 @@
 #' @param f Name of a .json file.
 #'
 #' @return Tibble
+#'
+#' @export
 
 json_to_tibble <- function(f) {
   if (!file.exists(f)) {
-    stop("File does not exist.")
+    stop(paste0("'", f,"' does not exist in current working directory ('",
+                getwd(),"')."))
   }
 
   raw_json <- jsonlite::fromJSON(f)
