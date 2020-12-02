@@ -5,6 +5,10 @@
 
 <!-- badges: start -->
 
+![issues](https://img.shields.io/github/issues/schackartk/takeout)
+![forks](https://img.shields.io/github/forks/schackartk/takeout)
+![stars](https://img.shields.io/github/stars/schackartk/takeout)
+![license](https://img.shields.io/github/license/schackartk/takeout)
 <!-- badges: end -->
 
 <p align="center">
