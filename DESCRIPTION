@@ -2,7 +2,8 @@ Package: takeout
 Type: Package
 Title: Tools for Cleaning Google Takeout Data
 Version: 0.1.0
-Author: Kenneth Schackart
+Authors@R: person("Kenneth", "Schackart", email = "schackartk1@gmail.com",
+                  role = c("aut", "cre"))
 Maintainer: The package maintainer <schackartk1@gmail.com>
 Description: Various functions for cleaning and tidying data obtained from Google Takeout.
 License: MIT + file LICENSE
