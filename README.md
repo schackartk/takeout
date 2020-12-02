@@ -9,7 +9,7 @@
 
 <p align="center">
 
-<img src="man/figures/README_tile.svg" width="50%" />
+<img src="man/figures/README_tile.svg" width="25%" />
 
 </p>
 
