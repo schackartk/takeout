@@ -17,7 +17,18 @@
 
 </p>
 
-Functions for cleaning and tidying data obtained from Google Takeout.
+R functions for cleaning and tidying data obtained from [Google
+Takeout](https://takeout.google.com/).
+
+## Status
+
+This package is in an early stage of development. Immediate goals are to
+create functions that help with location related data (e.g. location
+history, place reviews and ratings).
+
+The goal project is more of an exercise for myself than to create a tool
+for others. In that spirit though, I am trying to make it relatively
+robust, for instance through the use of testing.
 
 ## Installation
 
