@@ -2,7 +2,7 @@
 #'
 #' Read in a .json file, unnest and flatten it, and return as a tibble.
 #'
-#' @param f Name of a .json file.
+#' @param f Name of a .json file (string).
 #'
 #' @return Tibble
 #'
