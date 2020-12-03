@@ -61,7 +61,7 @@ clean_locations <- function(df) {
                               "longitude" = "locations.longitudeE7",
                               "accuracy" = "locations.accuracy")
 
-  df_scaled <- na.omit(df_renamed)
+  df_scaled <- stats::na.omit(df_renamed)
 
   df_scaled$timestamp <- as.numeric(df_scaled$timestamp) * 10^-3
   df_scaled$timestamp <-
