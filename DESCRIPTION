@@ -19,5 +19,6 @@ Suggests:
 Imports: 
     tibble,
     jsonlite,
-    dplyr
+    dplyr,
+    stats
 VignetteBuilder: knitr
