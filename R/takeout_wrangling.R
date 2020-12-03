@@ -64,8 +64,9 @@ clean_locations <- function(df) {
   df_scaled <- na.omit(df_renamed)
 
   df_scaled$timestamp <- as.numeric(df_scaled$timestamp) * 10^-3
-  df_scaled$timestamp <- as.POSIXct(as.numeric(as.character(df_scaled$timestamp)),
-                                    origin="1970-01-01")
+  df_scaled$timestamp <-
+    as.POSIXct(as.numeric(as.character(df_scaled$timestamp)),
+               origin = "1970-01-01")
   df_scaled$latitude <- df_scaled$latitude * 10^-7
   df_scaled$longitude <- df_scaled$longitude * 10^-7
 
