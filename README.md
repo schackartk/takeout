@@ -13,7 +13,7 @@
 
 <p align="center">
 
-<img src="man/figures/README_tile.svg" width="25%" />
+<img src="man/figures/README_hex.svg" width="25%" />
 
 </p>
 
