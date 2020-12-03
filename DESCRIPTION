@@ -18,5 +18,6 @@ Suggests:
     rmarkdown
 Imports: 
     tibble,
-    jsonlite
+    jsonlite,
+    dplyr
 VignetteBuilder: knitr
