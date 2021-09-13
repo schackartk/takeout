@@ -10,8 +10,8 @@
 
 json_to_tibble <- function(f) {
   if (!file.exists(f)) {
-    stop(paste0("'", f,"' does not exist in current working directory ('",
-                getwd(),"')."))
+    stop(paste0("'", f, "' does not exist in current working directory ('",
+                getwd(), "')."))
   }
 
   raw_json <- jsonlite::fromJSON(f)
@@ -30,7 +30,7 @@ json_to_tibble <- function(f) {
 #'
 #' @export
 
-clean_locations <- function(df) {
+clean_locations <- function(df, tz="") {
 
   # df typically has 4 columns, but only 3 are critical
 
@@ -50,9 +50,9 @@ clean_locations <- function(df) {
     miss_col <- "longitude"
   }
 
-  if(miss_col != "") {
+  if (miss_col != "") {
     stop(paste0("Location history dataframe has missing column: '",
-                miss_col, "'." ))
+                miss_col, "'."))
   }
 
   df_renamed <- dplyr::rename(df,
@@ -69,6 +69,7 @@ clean_locations <- function(df) {
   df_scaled$timestamp <- as.numeric(df_scaled$timestamp) * 10^-3
   df_scaled$timestamp <-
     as.POSIXct(as.numeric(as.character(df_scaled$timestamp)),
+               tz = tz,
                origin = "1970-01-01")
   df_scaled$latitude <- df_scaled$latitude * 10^-7
   df_scaled$longitude <- df_scaled$longitude * 10^-7
